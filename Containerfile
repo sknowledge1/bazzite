@@ -218,7 +218,7 @@ RUN --mount=type=cache,dst=/var/cache \
         scx-scheds \
         scx-tools && \
     dnf5 -y copr disable bieszczaders/kernel-cachyos-addons && \
-    dnf5 -y install \
+    dnf5 -y install --enable-repo=terra-extras \
         bpftune-gaming \
         fuse-libs \
         uld \
@@ -240,7 +240,7 @@ RUN --mount=type=cache,dst=/var/cache \
         usbip \
         compsize \
         ryzenadj \
-        ddcutil \
+        terra-ddcutil \
         input-remapper \
         libinput-utils \
         i2c-tools \
